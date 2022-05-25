@@ -1,0 +1,54 @@
+.contact-page {
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+
+        h2 {
+            text-align: center;
+        }
+
+        svg {
+            width: 100px;
+            height: 100px;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__anchor {
+        svg path,
+        svg g path
+        {
+            fill: $color-black;
+        }    
+    }
+
+    &__email {
+        a {
+            svg path:nth-child(1) {
+                fill: none;
+            }
+        }
+    }
+
+    @media ( min-width: $breakpoint-mobile ) {
+        &__links {
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 5rem;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.single-project {
+
+    &__banner {
+        img { 
+            width: 100%;
+            min-height: 157px;
+            object-fit: cover;
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto 4rem auto;
+        margin-bottom: 4rem;
+
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: .7rem 1.5rem;
+            border-radius: 5px;
+            color: $color-white;
+            background-color: $color-secondary;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                background-color: $color-secondary-hover;
+            }
+        }
+    }
+
+    &__overview-wrapper {
+        margin: 0 .5rem;
+    }
+
+    &__wrapper-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__overview {
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    &__details {
+
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    &__accordion-container {
+        margin: 3rem 0 3rem 0;
+        p {
+            margin: 0;
+        }
+    }
+
+    &__accordion-heading {
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: .5rem;
+        background-color: $color-accordion-bgc;
+    }
+
+    &__accordion-button {
+        transition: ease-in-out .2s;
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__accordion-content {
+        padding: .5rem;
+        background-color: $color-gray;
+    }
+
+    &__carousel {
+        max-width: 800px;
+        margin: 0 auto 4rem auto;
+        margin-bottom: 4rem;
+
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media ( min-width: $breakpoint-mobile ) {
+        &__details {
+            display: grid;
+            grid-template-columns: repeat( 3, 1fr );
+            grid-template-rows: 1fr;
+            justify-items: center;
+        }
+    }
+
+    @media ( min-width: $breakpoint-tablet ) {
+        &__accordion-heading {
+            font-size: 1.7rem;
+        }
+
+        &__accordion-content {
+            font-size: 1.2rem;
+        }
+    }
+}

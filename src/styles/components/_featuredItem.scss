@@ -1,0 +1,115 @@
+.featured-item {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 1rem;
+    padding: 2rem 1rem;
+    background-color: $color-card-bgc;
+    border-radius: 10px;
+
+    &__thumbnail {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &__info {
+
+        h3 {
+            font-size: 2rem;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__tech {
+        margin-bottom: 2rem;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+
+            li {
+                font-size: 1.7rem;
+                margin: .2rem;
+                padding: .2rem;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: flex-start;
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: $color-white;
+            background-color:  $color-secondary;
+            border-radius: 5px;
+            margin: 0 .3rem 0 0;
+            padding: .3rem .3rem;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                transform: translateY(-3px);
+                color: $color-white-hover
+            }
+        }
+    }
+
+    @media ( min-width: $breakpoint-tablet ) {
+        flex-direction: row;
+
+        &__thumbnail {
+            max-width: 400px;
+            object-fit: cover;
+            width: 45%;
+        }
+
+        &__info {
+            width: 50%;
+
+            h3 {
+                margin: 0 0 1.5rem 0;
+            }
+        }
+    }
+
+    @media ( min-width: $breakpoint-desktop ) {
+        align-items: center;
+        margin: 6rem 6rem;
+        gap: 2rem;
+
+        &__thumbnail {
+            max-width: 500px;
+            object-fit: cover;
+            width: 60%;
+        }
+
+        &__info {
+            width: 40%;
+        }
+    }
+
+    @media ( min-width: $breakpoint-large-desktop ) {
+        padding: 2rem 3rem;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 6rem auto;
+
+        &__thumbnail {
+            max-width: 600px;
+            width: 60%;
+            margin: 0;
+        }
+
+        &__info {
+            width: 40%;
+        }
+    }
+}

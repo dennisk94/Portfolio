@@ -1,0 +1,52 @@
+.project-filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: center;
+    margin: 4rem auto;
+
+    &__button {
+        width: 95%;
+        min-width: 125px;
+        max-width: 250px;
+        height: auto;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        color: $color-white;
+        background-color: $color-secondary;
+        margin: .5rem .3rem;
+        padding: .9rem .7rem;
+        transition: ease-in-out .2s;
+        
+        &:hover {
+            background-color: $color-secondary-hover;
+        }
+    }
+
+    @media ( min-width: $breakpoint-tablet ) {
+        grid-template-columns: repeat( 4, 1fr );
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @media ( min-width: $breakpoint-desktop ) {
+        grid-template-columns: repeat( 8, 1fr );
+        grid-template-rows: 1fr;
+
+        &__button {
+            min-width: 110px;
+        }
+    }
+
+    @media ( min-width: $breakpoint-large-desktop ) {
+        &__button {
+            min-width: 125px;
+            font-size: 1.3rem;
+            padding: 1.1rem .9rem;
+        }
+    }
+}

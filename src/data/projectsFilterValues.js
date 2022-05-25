@@ -1,0 +1,1 @@
+export const filterValues = ['All', 'Html/Css', 'JavaScript', 'WordPress', 'React', 'NextJs', 'Redux', 'TypeScript'];

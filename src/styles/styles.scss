@@ -1,0 +1,21 @@
+// Base
+@import './base/base';
+
+// Components
+@import './components/banner';
+@import './components/about';
+@import './components/featuredProjects';
+@import './components/featuredItem';
+@import './components/contact';
+@import './components/projectItem';
+@import './components//projectFilters';
+
+// Layout
+@import './layout/header';
+@import './layout/footer';
+
+// Pages
+@import './pages/aboutPage';
+@import './pages/contactPage';
+@import './pages/projectsPage';
+@import './pages/singleProjectPage';
