@@ -1,6 +1,9 @@
 //Images
-import placeHolder from '../img/placeholder.jpg';
-import placeHolderBanner from '../img/cinephile-banner.png';
+import portfolioThumbnail from '../img/portfolio-thumbnail.png';
+import portfolioBanner from '../img/portfolio-banner.png';
+import portfolioCarousel1 from '../img/portfolio-carousel-1.png';
+import portfolioCarousel2 from '../img/portfolio-carousel-2.png';
+import portfolioCarousel3 from '../img/portfolio-carousel-3.png';
 import capstoneThumbnail from '../img/capstone-thumbnail.png';
 import capstoneBanner from '../img/capstone-banner.png';
 import capstoneCarousel1 from '../img/capstone-carousel-1.png';
@@ -79,9 +82,9 @@ export const projectsData = [
         research: 'Many different versions of the portfolio that you see now were created to find the right styling and functionality that best represents what I am about.', 
         design: 'The goal in regards to design was to utilize a clean aesthetic while adding in a touch of animation to bring colour to the website.',
         reflection: 'This project helped me to get more comfortable with React and understand the importance of tailoring websites to best fit the needs of clients/users.',
-        thumbnail: placeHolder,
-        bannerImg: placeHolderBanner,
-        carouselImg: [placeHolder, placeHolder, placeHolder],
+        thumbnail: portfolioThumbnail,
+        bannerImg: portfolioBanner,
+        carouselImg: [portfolioCarousel1, portfolioCarousel2, portfolioCarousel3],
         githubUrl: 'https://github.com/dennisk94/Portfolio',
         liveUrl: 'https://denniskim.codes'
     },
