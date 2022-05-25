@@ -19,12 +19,20 @@ $breakpoint-large-desktop: 75em;
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: 'Roboto Slab', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fcf7e9;
+}
+h1,
+h2,
+h3, 
+h4,
+li,
+a,
+p,
+button {
+  font-family: 'Roboto Slab', serif;
 }
 
 .main {
