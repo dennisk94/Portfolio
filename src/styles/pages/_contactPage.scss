@@ -28,14 +28,6 @@
         }
     }
 
-    &__anchor {
-        svg path,
-        svg g path
-        {
-            fill: $color-black;
-        }    
-    }
-
     &__email {
         a {
             svg path:nth-child(1) {
@@ -49,6 +41,52 @@
             flex-direction: row;
             justify-content: space-evenly;
             margin-top: 5rem;
+        }
+    }
+}
+
+#light .contact-page {
+    &__anchor {
+        svg path,
+        svg g path
+        {
+            fill: $color-black;
+        }    
+    }
+
+    
+    &__email { 
+        a {
+            svg path:nth-child(1) {
+                fill: none;
+            }
+        }
+    }
+}
+
+#dark .contact-page {
+
+    h1 {
+        color: $color-white;
+    }
+    
+    &__links {
+        h2 {
+            color: $color-white;
+        }
+    }
+
+    &__anchor {
+        svg path {
+            fill: $color-white;
+        }
+    }
+
+    &__email { 
+        a {
+            svg path:nth-child(1) {
+                fill: none;
+            }
         }
     }
 }

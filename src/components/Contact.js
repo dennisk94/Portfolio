@@ -27,11 +27,11 @@ const Contact = () => {
             I'm excited for any challenge or opportunity. You can reach me via email or linkedin.
         </p>
         <div className="contact__links">
-            <a href="mailto:dennis.kim@hotmail.com">
+            <a href="mailto:dennis.kim@hotmail.com" className='contact__email'>
                 { IconGenerator('email') }
             </a>
 
-            <a href="https://www.linkedin.com/in/dennis-kim-61825b237/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/dennis-kim-61825b237/" className='contact__linkedin' target="_blank" rel="noopener noreferrer">
                 { IconGenerator('linkedin') }
             </a>
         </div>

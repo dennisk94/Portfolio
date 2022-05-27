@@ -78,14 +78,10 @@
         font-size: 1.2rem;
         font-weight: 500;
         padding: .5rem;
-        background-color: $color-accordion-bgc;
     }
 
     &__accordion-button {
         transition: ease-in-out .2s;
-        &:hover {
-            color: $color-white;
-        }
     }
 
     &__accordion-content {
@@ -120,6 +116,96 @@
 
         &__accordion-content {
             font-size: 1.2rem;
+        }
+    }
+}
+
+#light .single-project { 
+    h1 {
+        color: $color-black;
+    }
+
+    &__links {
+        a {
+            color: $color-black;
+
+            &:hover { 
+                color: $color-white;
+            }
+        }
+    }
+
+    &__team, 
+    &__roles,
+    &__skills {
+        h3,
+        ul li {
+            color: $color-black;
+        }
+    }
+
+    
+    &__accordion-heading {
+        color: $color-black;
+        background-color: $color-accordion-bgc;
+    }
+
+    &__accordion-button {
+        &:hover { 
+            color: $color-white;
+        }
+    }
+
+    &__carousel {
+        color: $color-black;
+    }
+}
+
+#dark .single-project {
+    h1 {
+        color: $color-white;
+    }
+
+    &__links {
+        a {
+            color: $color-white;
+
+            &:hover { 
+                color: $color-white-hover;
+            }
+        }
+    }
+
+    &__overview {
+        h2,
+        p {
+            color: $color-white;
+        }   
+    }
+
+    &__team, 
+    &__roles,
+    &__skills {
+        h3,
+        ul li {
+            color: $color-white;
+        }
+    }
+
+    &__accordion-heading {
+        color: $color-white;
+        background-color: $dark-accordion-bgc;
+    }
+
+    &__accordion-button {
+        &:hover { 
+            color: $color-white-hover;
+        }
+    }
+
+    &__carousel {
+        h3 {
+            color: $color-white;
         }
     }
 }

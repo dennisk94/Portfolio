@@ -5,3 +5,15 @@
         text-align: center;
     }
 }
+
+#light .featured-wrapper {
+    h2 {
+        color: $color-black;
+    }
+}
+
+#dark .featured-wrapper {
+    h2 {
+        color: $color-white;
+    }
+}

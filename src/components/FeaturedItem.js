@@ -49,8 +49,8 @@ const FeaturedItem = (props) => {
                     </ul>
                 </div>
                 <div className="featured-item__links">
-                    <a href={liveUrl}>Live Site</a>
-                    <a href={githubUrl}>GitHub</a>
+                    <a href={liveUrl} target="_blank" rel="noopener noreferrer">Live Site</a>
+                    <a href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
                     <Link to={`/project/${slug}`}>Learn More</Link>
                 </div>
             </div>

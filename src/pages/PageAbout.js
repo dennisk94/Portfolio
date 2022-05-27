@@ -42,7 +42,7 @@ const PageAbout = () => {
             </h1>
 
             <p>
-            My name is Dennis Kim and I am a recent graduate of the Front-end Developer program at BCIT. I am based out of Vancouver, BC, and my passion for development stems from finding solutions to problems. With a genuine curiosity for code and design paired with a background in Sociology ( BA – University of Toronto ), my aim is to make the web experience come alive.
+                My name is Dennis Kim and I am a recent graduate of the Front-end Developer program at BCIT. I am based out of Vancouver, BC, and my passion for development stems from finding solutions to problems. With a genuine curiosity for code and design paired with a background in Sociology ( BA – University of Toronto ), my aim is to make the web experience come alive.
             </p>
         </motion.div>
         <motion.div 
@@ -51,9 +51,9 @@ const PageAbout = () => {
             whileInView='show'
             viewport={{ once: true }}
             className="about-page__tech-stack">
-            <h2>
-                Tools and Skills
-            </h2>
+                <h2>
+                    Tools and Skills
+                </h2>
             <TechStack />
         </motion.div>
     </div>

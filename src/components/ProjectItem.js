@@ -26,10 +26,10 @@ const ProjectItem = ( { project } ) => {
                 </div>
             </div>
             <div className="project-item__links">
-                <a href={project.liveUrl} className="project-item__live">
+                <a href={project.liveUrl} className="project-item__live" target="_blank" rel="noopener noreferrer">
                     Live Site
                 </a>
-                <a href={project.githubUrl} className="project-item__GitHub">
+                <a href={project.githubUrl} className="project-item__GitHub" target="_blank" rel="noopener noreferrer">
                     GitHub
                 </a>
                 {

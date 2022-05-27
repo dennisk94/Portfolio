@@ -36,3 +36,25 @@
         }
     }    
 }
+
+#dark .about-page {
+
+    &__biography {
+        h1, 
+        p {
+            color: $color-white;
+        }
+    }
+
+    &__tech-stack {
+        h2 {
+            color: $color-white;
+        }
+    }
+
+    &__svgs {
+        svg {
+            fill: $color-white;
+        }
+    }
+}

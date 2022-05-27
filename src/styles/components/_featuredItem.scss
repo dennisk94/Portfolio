@@ -3,7 +3,6 @@
     flex-direction: column;
     margin: 6rem 1rem;
     padding: 2rem 1rem;
-    background-color: $color-card-bgc;
     border-radius: 10px;
 
     &__thumbnail {
@@ -48,8 +47,7 @@
         a {
             text-decoration: none;
             font-weight: 500;
-            color: $color-white;
-            background-color:  $color-secondary;
+            color: $color-black;
             border-radius: 5px;
             margin: 0 .3rem 0 0;
             padding: .3rem .3rem;
@@ -57,7 +55,6 @@
 
             &:hover {
                 transform: translateY(-3px);
-                color: $color-white-hover
             }
         }
     }
@@ -110,6 +107,52 @@
 
         &__info {
             width: 40%;
+        }
+    }
+}
+
+#light .featured-item {
+
+    background-color: $color-card-bgc;
+
+    &__links {
+        a {
+            color: $color-black;
+            background-color: $color-secondary;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+#dark .featured-item {
+    background-color: $dark-card-bgc;
+
+    &__info {
+
+        h3,
+        p {
+            color: $color-white;
+        }
+        
+    }
+
+    &__tech {
+        ul li svg {
+            fill: $color-white;
+        }
+    }
+
+    &__links {
+        a {
+            background-color: $color-dark-secondary;
+            color: $color-white;
+
+            &:hover {
+                color: $color-white-hover;
+            }
         }
     }
 }

@@ -7,3 +7,15 @@
         text-align: center;
     }
 }
+
+#light .projects {
+    h1 {
+        color: $color-black;
+    }
+}
+
+#dark .projects {
+    h1 {
+        color: $color-white;
+    }
+}

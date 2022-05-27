@@ -1,9 +1,8 @@
 .header {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: $color-secondary;
     padding: 0;
 
     &__logo {
@@ -18,13 +17,13 @@
     }
 
     &__text {
-        color: white;
         font-weight: 500;
         transition: ease-in-out .2s;
+    }
 
-        &:hover { 
-            color: $color-white-hover;
-        }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__nav {
@@ -34,7 +33,6 @@
         right: 0;
         margin: 0 auto;
         padding: .5rem 0;
-        background-color: $color-secondary;
         z-index: 10000;
 
         @media ( min-width: $breakpoint-tablet ) {
@@ -57,21 +55,75 @@
 
     &__a {
         text-decoration: none;
-        color: $color-white;
         padding: .3rem;
         transition: ease-in-out .2s;
-
-        &:hover {
-            color: $color-white-hover;
-        }
 
         @media ( min-width: $breakpoint-mobile ) {
             font-size: 1.5rem;
         }
     }
 
+    &__toggle {
+        margin: 0 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    @media ( min-width: $breakpoint-mobile ) {
+        justify-content: space-around;
+    }
+
     @media ( min-width: $breakpoint-tablet ) {
         justify-content: space-between;
         padding: 0 4rem;
+    }
+}
+
+// Light theme
+#light .header {
+    background-color: $header-footer-light;
+
+    &__nav {
+        background-color: $header-footer-light;
+    }
+
+    &__text {
+        color: $color-black;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__a {
+        color: $color-black;
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+// Dark theme
+#dark .header {
+    background-color: $color-tertiary;
+
+    &__nav {
+        background-color: $color-tertiary;
+    }
+
+    &__text {
+        color: $color-white;
+
+        &:hover {
+            color: $color-white-hover;
+        }
+    }
+
+    &__a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-white-hover;
+        }
     }
 }

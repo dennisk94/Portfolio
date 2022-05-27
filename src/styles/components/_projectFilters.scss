@@ -50,3 +50,24 @@
         }
     }
 }
+
+#light .project-filters {
+    
+    &__button {
+        color: $color-black;
+
+        &:hover { 
+            color: $color-white;
+        }
+    }
+}
+
+#dark .project-filters {
+    &__button {
+        color: $color-white;
+
+        &:hover {
+            color: $color-white-hover;
+        }
+    }
+}

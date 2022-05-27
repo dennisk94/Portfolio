@@ -20,7 +20,6 @@
     &__info {
         text-align: left;
         height: 100%;
-        background-color: $color-card-bgc;
         padding: .5rem;
         margin-bottom: 1.5rem;
         border-radius: 10px;
@@ -106,5 +105,51 @@
 
     @media ( min-width: $breakpoint-large-desktop ) {
         width: 90%;
+    }
+}
+
+#light .project-item {
+
+    &__info {
+        background-color: $color-card-bgc;
+    }
+    &__links {
+        a {
+            color: $color-black;
+
+            &:hover { 
+                color: $color-white;
+            }
+        }
+    }
+}
+
+#dark .project-item {
+    &__info {
+        background-color: $dark-card-bgc;
+
+        h2 {
+            color: $color-white;
+        }
+    }
+
+    &__overview {
+        color: $color-white;
+    }
+
+    &__tech {
+        ul li svg { 
+            fill: $color-white;
+        }
+    }
+
+    &__links { 
+        a {
+            color: $color-white;
+
+            &:hover {
+                color: $color-white-hover;
+            }
+        }
     }
 }

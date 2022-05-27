@@ -3,10 +3,10 @@ import About from "../components/About";
 import FeaturedProjects from "../components/FeaturedProjects";
 import Contact from "../components/Contact";
 
-const PageHome = () => {
+const PageHome = ( { theme }) => {
   return (
     <div>
-        <Banner />
+        <Banner theme={theme}/>
         <About />
         <FeaturedProjects />
         <Contact />

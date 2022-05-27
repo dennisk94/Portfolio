@@ -1,8 +1,10 @@
 // Color Variables
-$color-primary: #fcf7e9;
+$color-bgc: #fcf7e9;
+$color-dark-secondary: #3282B8;
 $color-secondary: #2978A0;
 $color-secondary-hover: #338cb9;
-$color-tertiary: #001C55;
+$color-contact: #2D4263;
+$color-tertiary: #072e7c;
 $color-card-bgc: #B8DBD9;
 $color-accordion-bgc: #7ADFBB;
 $color-nav-hover: #C0DFA1;
@@ -10,6 +12,13 @@ $color-white: #ffffff;
 $color-white-hover: #dbd9d9;
 $color-black: #000000;
 $color-gray: #e4e4e4;
+// Light Theme
+$header-footer-light: #69b7ee;
+$about-bgc: #B7CECE;
+// Dark Theme
+$dark-body-bgc: #041C32;
+$dark-card-bgc: #03506F;
+$dark-accordion-bgc: #537EC5;
 
 // Responsive Breakpoints
 $breakpoint-mobile: 37.5em;
@@ -22,7 +31,7 @@ body {
     font-family: 'Roboto Slab', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fcf7e9;
+    background-color: $color-bgc;
 }
 h1,
 h2,
@@ -45,3 +54,11 @@ button {
       monospace;
   }
   
+
+#light { 
+  background-color: $color-bgc;
+}
+
+#dark {
+  background-color: $dark-body-bgc;
+}

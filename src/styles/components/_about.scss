@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     height: 250px;
-    background-color: $color-tertiary;
     color: $color-white;
 
     &__text {
@@ -31,4 +30,14 @@
             }
         }
     }
+}
+
+#light .about {
+    color: $color-black;
+    background-color: $about-bgc;
+}
+
+#dark .about {
+    color: $color-white;
+    background-color: $color-contact;
 }

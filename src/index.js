@@ -6,9 +6,11 @@ import './styles/styles.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <div>
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
+  </div>
 );

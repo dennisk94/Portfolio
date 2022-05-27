@@ -17,7 +17,6 @@
         right: 0;
         width: 90vw;
         margin: 0 auto;
-        color: $color-white;
         text-align: center;
     }
 
@@ -33,5 +32,18 @@
         font-size: 2.5rem;
         font-weight: 500;
     }
+}
 
+#light .banner {
+    &__heading,
+    &__sub-heading {
+        color: $color-black;
+    }
+}
+
+#dark .banner { 
+    &__heading,
+    &__sub-heading {
+        color: $color-white;
+    }
 }

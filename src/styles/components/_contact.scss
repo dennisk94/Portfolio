@@ -6,7 +6,6 @@
     margin-top: 6rem;
     padding: 2rem 1rem;
     color: $color-white;
-    background-color: $color-tertiary;
 
     h3 {
         text-align: center;
@@ -44,14 +43,39 @@
                 fill: $color-white;
                 transition: ease-in-out .2s;
             }
-
-            &:hover {
-                svg path:nth-child(2),
-                svg g path {
-                    fill: $color-white-hover;
-                }
-            }
         }
         
+    }
+}
+
+#light .contact {
+    color: $color-black;
+    background-color: $about-bgc;
+
+    &__links {
+
+        svg path:nth-child(2) {
+            fill: $color-black;
+        }
+
+        svg g path {
+            fill: $color-black;
+        }
+
+    }
+}
+
+#dark .contact {
+    color: $color-white;
+    background-color: $color-contact;
+    
+    &__links {
+        svg path:nth-child(2) {
+            fill: $color-white;
+        }
+
+        svg g path {
+            fill: $color-white;
+        }
     }
 }
