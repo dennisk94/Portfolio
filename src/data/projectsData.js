@@ -22,6 +22,9 @@ import shoeDepotCarousel3 from '../img/shoe-depot-carousel-3.png';
 import weatherAppThumbnail from '../img/weather-app-thumbnail.png';
 import todoAppThumbnail from '../img/todo-app-thumbnail.png';
 import primerPropertiesThumbnail from '../img/prime-properties-thumbnail.png';
+import hiLowThumbnail from '../img/hi-low-thumbnail.png';
+import baseDefenseThumbnail from '../img/base-defense-thumbnail.png';
+import flappyBirdThumbnail from '../img/flappy-bird-thumbnail.png';
 
 //All of the information about projects are stored here
 export const projectsData = [
@@ -36,7 +39,7 @@ export const projectsData = [
         overview: 'The Capstone Project is a custom WordPress website that we created with a team of 4 for a fictional vacation cabin rental service. The theme was fully customized using the Underscores starter theme. In a span of 5 weeks, our team actively took part in the researching, planning, developing, designing, and deployment of the website.',
         team: ['Steffen Neves-silva', 'Claire Kang', 'Rui Zhai', 'Dennis Kim'],
         roles: ['Development', 'Design', 'SEO'],
-        tech: ['WordPress', 'Html', 'JavaScript',],
+        tech: ['WordPress', 'Html', 'sass', 'JavaScript',],
         research: 'Research was done on existing vacation cabin rentals in the areas surrounding Vancouver, BC. We also took inspiration mainly from Bowen Island in regards to their vacation activities and the amenities they have offer. Finally, we had a discovery meeting with our client to finalize design and functionality requirements for the website.', 
         design: 'Our design choices were based off of several vacation cabin rental websites. As a team, our goal was to create a modern website design using whitespace to our advantage, while maintaining the core essence of our website, which was to provide a relaxing and fun environment for our guests. In terms of colours, we chose a palette that exuded feelings of relaxation and fun. These colours consisted of light green, and orange. Low-fidelity wireframes were created for the custom WordPress site.',
         reflection: 'This particular project was a great learning experience as it allowed us to experience the dynamics of working in a team towards a larger goal. Being able to experience designing and developing a website from beginning to end provided an awesome environment to learn what it would be like working within a company in the future.',
@@ -57,7 +60,7 @@ export const projectsData = [
         overview: 'Cinephile is a single page application created with React that allows visitors to browse, learn about, and favourite movies from various categories. Users can choose from popular, top rated, now playing, and upcoming. The TMDB API was used to retrieve all the movie information.',
         team: ['Dennis Kim'],
         roles: ['Development', 'Design'],
-        tech: ['Html', 'React', 'JavaScript'],
+        tech: ['Html', 'sass', 'React', 'JavaScript'],
         research: 'Research was done on existing movie database websites such as IMDB and TMDB. The intention was to create an elegant and concise design that allowed the user to easily navigate the application.', 
         design: 'Low fidelity and high fidelity mockups were created using Photoshop and Adobe XD. The dark theme was used to highlight the movie posters, much like how whitespace is used to garner attention to a specific area/element on a webpage. High-fidelity mockups were created before developing the react app.',
         reflection: 'The project was a fun introduction to React allowed me the space to explore the different functionalities that exists within the framework. In a short span of time, I was able to create a dynamic application and left me wanting to dive deeper into React.',
@@ -78,7 +81,7 @@ export const projectsData = [
         overview: 'The portfolio website developed and designed to showcase past projects that I have completed. The website was created using React so that I may update my portfolio more efficiently in the future.',
         team: ['Dennis Kim'],
         roles: ['Development', 'Design'],
-        tech: ['Html', 'React', 'JavaScript'],
+        tech: ['Html', 'sass', 'React', 'JavaScript'],
         research: 'Many different versions of the portfolio that you see now were created to find the right styling and functionality that best represents what I am about.', 
         design: 'The goal in regards to design was to utilize a clean aesthetic while adding in a touch of animation to bring colour to the website.',
         reflection: 'This project helped me to get more comfortable with React and understand the importance of tailoring websites to best fit the needs of clients/users.',
@@ -136,6 +139,42 @@ export const projectsData = [
         liveUrl: 'https://denniskim.codes/todo-app/',
     },
 
+    {
+        title: 'Hi-Low',
+        slug: 'hi-low',
+        featured: false,
+        category: ['All', 'Html/Css', 'JavaScript'],
+        moreInfo: false,
+        excerpt: 'A number guessing game developed with HTML, CSS/Bootstrap and JavaScript. This was my first attempt at a JavaScript game.',
+        tech: ['Html', 'JavaScript', 'BootStrap'],
+        thumbnail: hiLowThumbnail,
+        githubUrl: 'https://github.com/dennisk94/Hi-Low',
+        liveUrl: 'https://denniskim.codes/hi-low',
+    },
+    {
+        title: 'Base Defense',
+        slug: 'base-defense',
+        featured: false,
+        category: ['All', 'Html/Css', 'JavaScript'],
+        moreInfo: false,
+        excerpt: 'A base defense game developed with HTML, CSS/Bootstrap , JavaScript, and the Canvas API.',
+        tech: ['Html', 'JavaScript', 'BootStrap', 'GSAP'],
+        thumbnail: baseDefenseThumbnail,
+        githubUrl: 'https://github.com/dennisk94/Base-Defense',
+        liveUrl: 'https://denniskim.codes/base-defense',
+    },
+    {
+        title: 'Flappy Bird',
+        slug: 'flappy-bird',
+        featured: false,
+        category: ['All', 'Html/Css', 'JavaScript'],
+        moreInfo: false,
+        excerpt: 'A clone of the Flappy Bird game created with HTML, CSS, JavaScript and Phaser JS',
+        tech: ['Html', 'JavaScript',],
+        thumbnail: flappyBirdThumbnail,
+        githubUrl: 'https://github.com/dennisk94/Flappy-Bird',
+        liveUrl: 'https://denniskim.codes/flappy-bird',
+    },
     {
         title: 'Prime Properties',
         slug: 'prime-properties',

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
-import { IconGenerator } from "../components/IconGenerator";
+import { IconGenerator } from "../utilities/IconGenerator";
 
 const PageContact = () => {
 

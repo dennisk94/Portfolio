@@ -1,4 +1,4 @@
-import { IconGenerator } from './IconGenerator';
+import { IconGenerator } from '../utilities/IconGenerator';
 
 const TechStack = () => {
   return (

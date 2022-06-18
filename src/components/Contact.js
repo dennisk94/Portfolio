@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { IconGenerator } from './IconGenerator';
+import { IconGenerator } from '../utilities/IconGenerator';
 
 const Contact = () => {
 

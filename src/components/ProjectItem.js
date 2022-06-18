@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IconGenerator } from './IconGenerator';
+import { IconGenerator } from '../utilities/IconGenerator';
 
 const ProjectItem = ( { project } ) => {
   return (

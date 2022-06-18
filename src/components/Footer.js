@@ -1,5 +1,5 @@
 import { getYear } from '../utilities/getDates';
-import { IconGenerator } from './IconGenerator';
+import { IconGenerator } from '../utilities/IconGenerator';
 
 const Footer = () => {
   return (
