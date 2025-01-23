@@ -44,6 +44,9 @@ import hiLowThumbnailImg from '../Assets/asset-hi-low-game/featured-hi-low-game.
 // Portfolio
 import portfolioThumbnailImg from '../Assets/asset-portfolio/featured-portfolio.webp';
 import portfolioBannerImg from '../Assets/asset-portfolio/banner-portfolio.webp';
+import portfolioScreenshot1 from '../Assets/asset-portfolio/screenshots/portfolio-carousel-1.png';
+import portfolioScreenshot2 from '../Assets/asset-portfolio/screenshots/portfolio-carousel-2.png';
+import portfolioScreenshot3 from '../Assets/asset-portfolio/screenshots/portfolio-carousel-3.png';
 
 // Weather App
 import weatherAppThumbnailImg from '../Assets/asset-weather-app/featured-weather-app.webp';
@@ -253,6 +256,11 @@ export const projectData = [
         design: "",
         development: "To make the projects more manageable, I created an array so store all the projects. I created reusable React components and utilized the useState and useEffect hooks to retrieve projects data. It makes updating/adding/deleting projects really convenient and efficient. In order to increase the visibility of the portfolio website in search engines, I used React Helmet to optimize the SEO. Therefore, it allowed me to have every page have its own custom meta tags. The React useState hook along with local storage was used to implement dark/light theme toggle functionality to create a better user experience.",
         reflection: "This portfolio project gave me an opportunity to try out new skills and get more familiar with React. It also allowed me to realize how React components are useful when building templates to serve project data. I spent a lot of time planning before the design and development phase. Breaking down the project into small pieces, following the plan allowed me to make the workflow smoother and more efficient. One thing that I learned during this project is to put myself in the user’s shoes. Only when we have learnt more about the target users, we can create a website that has the features/design that is most suitable to their needs. In the middle of the development phase, I realized React, as a single-page application, has limited capabilities of improving SEO. Although I have used React Helmet to get around the issue, I think using a static site generator such as Gatsby or NextJs to build a portfolio site will be a more SEO-friendly solution.",
+        screenshots: [
+            portfolioScreenshot1,
+            portfolioScreenshot2,
+            portfolioScreenshot3
+        ],
         prevLink: '/westcozy-cabins',
         nextLink: '/cinephile'
     },

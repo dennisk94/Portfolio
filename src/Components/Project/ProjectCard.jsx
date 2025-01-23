@@ -50,12 +50,18 @@ const ProjectCard = ({ project }) => {
             className='project-card'>
             <img src={thumbnailImg} alt={title} className='project-thumbnail' />
             <div className="project-info">
-                <NavLink to={`/work/${slug}`} className='project-link'>
-                    <h3 className="project-title">
-                        {title}
-                    </h3>
-                </NavLink>
-
+                {
+                    moreInfo ?
+                        <NavLink to={`/work/${slug}`} className='project-link'>
+                            <h3 className="project-title">
+                                {title}
+                            </h3>
+                        </NavLink>
+                        :
+                        <h3 className="project-title">
+                            {title}
+                        </h3>
+                }
                 <ul className="skills">
                     {
                         renderSkills()
