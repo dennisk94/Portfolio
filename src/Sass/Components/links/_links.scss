@@ -1,0 +1,10 @@
+@use '../../Variables/variables.scss' as *;
+
+.link-green {
+    color: $brandGreen;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,70 @@
+@use '../../Variables/variables.scss' as *;
+
+.btn-primary {
+    display: block;
+    line-height: 40px;
+    font-size: $baseline;
+    text-decoration: none;
+    color: $blk;
+    border: 2px solid $brandGreen;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: .2s ease-in-out;
+    padding: 1px 15px;
+    font-weight: $medium;
+
+    &:hover {
+        color: $wht;
+        background-color: $brandGreen;
+    }
+
+    &:after {
+        background-color: $transparent;
+    }
+}
+
+.btn-primary.work-cta {
+    margin-top: 5rem;
+    width: fit-content;
+    margin: 5rem auto 0 auto;
+}
+
+.btn-primary.normal {
+    line-height: unset;
+    text-transform: none;
+    letter-spacing: 1px;
+    padding: 10px 17px;
+    height: 100%;
+
+    @media (max-width: $mobile-sm ) {
+        padding: 10px 0;
+    }
+}
+
+.btn-primary.internal {
+    padding: 11px 17px;
+
+    @media (max-width: $mobile-sm ) {
+        padding: 10px 0;
+    }
+}
+
+#dark .btn-primary {
+    color: $wht;
+    border: 2px solid $brandGreen;
+
+    &:hover {
+        color: $wht;
+    }
+
+    &:after {
+        background-color: $transparent;
+    }
+
+    &:hover {
+        &:after {
+            background-color: $transparent;
+        }
+    }
+}

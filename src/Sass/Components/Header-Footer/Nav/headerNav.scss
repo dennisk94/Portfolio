@@ -1,0 +1,125 @@
+@use '../../../Variables/variables.scss' as *;
+
+.nav-item {
+    font-size: $navLink;
+    font-weight: $semi-bold;
+    color: $blk;
+    text-decoration: none;
+
+    &:hover {
+        color: $brandGreen;
+    }
+
+    @media (max-width: $mobile ) {
+        font-size: $navLink;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    z-index: 2;
+
+    .dark-mode-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 7px;
+        top: 4px;
+    }
+
+    .light-mode-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+
+        path {
+            fill: $wht;
+        }
+    }
+
+    @media (max-width: $mobile ) {
+        display: $none;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        gap: 50px;
+        background-color: $blk;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    @media (max-width: $mobile ) {
+        gap: 40px;
+
+    }
+}
+
+.nav-container {
+    .close-mobile-window {
+        display: none;
+    }
+}
+
+@media (max-width: $mobile ) {
+    .nav-container {
+        .close-mobile-window {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: none;
+            opacity: .6;
+            background-color: $blk;
+            width: 100vw;
+            cursor: pointer;
+            border: none;
+        }
+
+        .close-mobile-window.menu-opened {
+            display: flex;
+            z-index: 1;
+        }
+    }
+
+    .nav {
+        transition: .5s ease-in-out;
+        right: -290px;
+    }
+
+    .menu-opened {
+        transition: .5s ease-in-out;
+    }
+
+    .nav.menu-opened {
+        position: fixed;
+        background-color: $blk;
+        display: $flex;
+        right: 0;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        width: 18rem;
+        flex-direction: column;
+        background-color: $wht;
+    }
+
+}
+
+#dark .nav-item {
+    color: $wht;
+
+    &:hover {
+        color: $brandGreen;
+    }
+}
+
+#dark {
+    .nav.menu-opened {
+        background-color: $brandGray;
+    }
+}

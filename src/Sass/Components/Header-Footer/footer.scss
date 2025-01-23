@@ -1,0 +1,102 @@
+@use '../../Variables/variables.scss' as *;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $wht;
+    padding: 120px 0 15px 0;
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        max-width: $max-width-1200;
+
+        .social-media-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            svg {
+                width: $social-30;
+                height: $social-30;
+
+                path {
+                    fill: $blk;
+                    transition: $ease-in-out;
+                }
+
+                &:hover {
+                    path {
+                        fill: $brandGreen;
+                    }
+                }
+            }
+
+            .email {
+                width: $social-30;
+                height: $social-30;
+
+                path {
+                    fill: none;
+                    stroke: $blk;
+                    transition: $ease-in-out;
+                }
+
+                &:hover {
+                    path {
+                        stroke: $brandGreen;
+                        fill: none;
+                    }
+                }
+            }
+
+            a {
+                color: unset;
+            }
+        }
+
+        .copyright-text {
+            color: $blk;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
+#dark .footer {
+    background-color: $brandGray;
+
+    .copyright-text {
+        color: $wht;
+    }
+
+    .social-media-wrapper {
+        svg {
+            path {
+                fill: $wht;
+            }
+
+            &:hover {
+                path {
+                    fill: $brandGreen;
+                }
+            }
+        }
+
+        .email {
+            path {
+                fill: none;
+                stroke: $wht;
+            }
+
+            &:hover {
+                path {
+                    stroke: $brandGreen;
+                    fill: none;
+                }
+            }
+        }
+    }
+}

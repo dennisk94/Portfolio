@@ -1,0 +1,94 @@
+@use '../../Variables/variables.scss' as *;
+
+.about {
+    color: $blk;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 5rem 0;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .heading {
+            margin: 0;
+            text-align: center;
+            font-size: $page-heading;
+        }
+
+        p {
+            margin: 0;
+            font-size: $baseline;
+            line-height: 1.6;
+
+            a {
+                color: $brandGreen;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .about-details p {
+            margin: 20px 0;
+        }
+    }
+
+    .toolkit {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+
+        .toolkit-heading {
+            text-align: center;
+            font-size: $page-sub-heading-3;
+            margin: 0;
+        }
+
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            row-gap: 1.5rem;
+            padding-left: 0;
+
+            .tool {
+                margin: 0;
+                font-size: $baseline;
+                list-style: none;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: $mobile ) {
+        .toolkit {
+            .tools {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+#dark .about {
+    color: $wht;
+
+    .intro {
+        p {
+            a {
+                color: $brandGreen;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

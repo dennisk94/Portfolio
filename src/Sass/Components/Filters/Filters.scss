@@ -1,0 +1,61 @@
+@use '../../Variables/variables.scss' as *;
+
+.filters {
+    background-color: $transparent;
+    width: fit-content;
+    margin: 0 auto 7rem auto;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+
+    .filter {
+        background-color: $transparent;
+        font-weight: $semi-bold;
+        padding: 5px 15px;
+        border: 2px solid $brandGreen;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: $ease-in-out;
+
+        &:hover {
+            background-color: $brandGreen;
+            color: $wht;
+        }
+    }
+
+    .filter.active {
+        background-color: $brandGreen;
+        color: $wht;
+    }
+
+    @media (max-width: $mobile ) {
+        display: flex;
+        gap: 1.5rem;
+        width: auto;
+        flex-direction: column;
+        padding: 1rem;
+
+        .filter {
+            padding: 5px 10px;
+        }
+    }
+}
+
+#dark {
+    .filters {
+        background-color: $transparent;
+
+        .filter {
+            color: $wht;
+            font-size: $baseline;
+            background-color: $transparent;
+
+            &:hover {
+                background-color: $brandGreen;
+            }
+        }
+
+        .filter.active {
+            background-color: $brandGreen;
+        }
+    }
+}

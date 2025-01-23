@@ -1,0 +1,29 @@
+@use '../../Variables/variables.scss' as *;
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    margin: .5rem 0 2rem 0;
+    padding-left: 0;
+
+    .skill {
+        margin: 0;
+        padding: 4px;
+        border: 2px solid $blk;
+        border-radius: 5px;
+        list-style: none;
+        font-size: $text-small;
+    }
+
+    @media (max-width: $tablet ) {
+        margin: 1rem 0 1.5rem 0;
+    }
+}
+
+#dark .skills {
+    .skill {
+        color: $wht;
+        border: 2px solid $wht;
+    }
+}

@@ -1,0 +1,105 @@
+@use '../../Variables/variables.scss' as *;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 0;
+    height: 57.9vh;
+    justify-content: center;
+
+    .contact-heading {
+        font-size: $page-heading;
+        color: $blk;
+        margin: 0;
+        text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+
+        a {
+            color: unset;
+
+            svg {
+                width: 50px;
+                height: 50px;
+
+                path {
+                    fill: $blk;
+                    transition: $ease-in-out;
+                }
+
+                &:hover {
+                    path {
+                        fill: $brandGreen;
+                    }
+                }
+            }
+
+            .email {
+                path {
+                    fill: none;
+                    stroke: $blk;
+                    transition: $ease-in-out;
+                }
+
+                &:hover {
+                    path {
+                        stroke: $brandGreen;
+                        fill: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: $mobile ) {
+        .contact-heading {
+            font-size: 4rem;
+        }
+
+        .social-links {
+            flex-direction: column;
+            gap: $page-heading-sm;
+        }
+    }
+}
+
+#dark .contact {
+    .contact-heading {
+        color: $wht;
+    }
+
+    .social-links {
+        svg {
+            path {
+                fill: $wht;
+            }
+
+            &:hover {
+                path {
+                    fill: $brandGreen;
+                }
+            }
+        }
+
+        .email {
+            path {
+                stroke: $wht;
+                fill: none;
+            }
+
+            &:hover {
+                path {
+                    stroke: $brandGreen;
+                    fill: none;
+                }
+            }
+        }
+    }
+}

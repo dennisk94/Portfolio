@@ -1,0 +1,94 @@
+@use '../../Variables/variables.scss' as *;
+
+.banner {
+    height: $banner-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 10rem 0 0 0;
+
+    .banner-img {
+        width: 30%;
+        height: 370px;
+        object-fit: contain;
+    }
+
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        color: $blk;
+        width: 70%;
+        max-width: 29rem;
+
+        .banner-title {
+            font-size: $banner-heading;
+            margin: 0;
+        }
+
+        .banner-intro {
+            font-size: $banner-intro;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: $tablet ) {
+        flex-direction: row;
+        gap: 2rem;
+
+        .banner-img {
+            width: fit-content;
+        }
+
+        .banner-img {
+            height: 200px;
+        }
+
+        .banner-info {
+            width: 85%;
+            max-width: 100%;
+
+            .banner-intro {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    @media (max-width: $mobile ) {
+        height: 100%;
+        flex-direction: column;
+        padding: 50px 0;
+
+        .banner-img {
+            width: 100%;
+            align-items: center;
+        }
+
+        .banner-info {
+            width: 100%;
+            align-items: flex-start;
+
+            .banner-title {
+                font-size: $banner-heading-sm;
+            }
+
+            .banner-intro {
+                font-size: $banner-intro-sm;
+                text-align: left;
+            }
+        }
+
+        .banner-img {
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+}
+
+#dark .banner {
+    .banner-info {
+        color: $wht;
+    }
+}
