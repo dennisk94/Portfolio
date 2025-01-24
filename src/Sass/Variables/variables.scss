@@ -24,11 +24,17 @@ $body-copy: 1.125rem;
 $body-copy-16: 1rem;
 $baseline: 1rem;
 $filter: 1.3rem;
-// Transition
-$ease-in-out: .2s ease-in-out;
 // Display
 $none: none;
+// Layouts and Spacing
 $flex: flex;
+$flex-column: column;
+$align-center: center;
+$justify-center: center;
+// Text Alignment
+$text-center: center;
+// Transition
+$ease-in-out: .2s ease-in-out;
 // Breakpoints
 $tablet: 62em; // 992px
 $mobile: 48em; // 768px
