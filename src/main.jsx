@@ -9,18 +9,20 @@ import About from './Pages/About';
 import Work from './Pages/Work';
 import Contact from './Pages/Contact';
 import SingleProject from './Pages/SingleProject';
+import PageNotFound from './Pages/PageNotFound';
 import RootLayout from './AppRouter/RootLayout';
 import './Sass/App.scss';
 
 const router = createBrowserRouter([
-  { 
+  {
     path: '/', element: <RootLayout />, children: [
+      { path: "*", element: <PageNotFound /> },
       { path: "/", element: <App /> },
       { path: "/about", element: <About /> },
       { path: "/work", element: <Work /> },
       { path: "/contact", element: <Contact /> },
       { path: "/work/:slug", element: <SingleProject /> },
-    ]  
+    ]
   },
 ]);
 
