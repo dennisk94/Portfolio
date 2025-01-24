@@ -1,0 +1,46 @@
+@use '../../Variables/variables.scss' as *;
+
+.page-not-found {
+    padding: 50px 0;
+    height: 58.7vh;
+    display: $flex;
+    align-items: $align-center;
+    justify-content: $justify-center;
+
+    .error-404 {
+        display: $flex;
+        flex-direction: $flex-column;
+        align-items: $align-center;
+        gap: 30px;
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .heading-404 {
+                font-size: $page-heading;
+                color: $blk;
+            }
+
+            .text-404 {
+                color: $blk;
+                text-align: $text-center;
+            }
+        }
+    }
+}
+
+#dark .page-not-found {
+    .error-404 {
+        .description {
+            .heading-404 {
+                color: $wht;
+            }
+
+            .text-404 {
+                color: $wht;
+            }
+        }
+    }
+}
