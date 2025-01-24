@@ -35,9 +35,6 @@ import typeScriptToDoThumbnailImg from '../Assets/asset-typescript-to-do-app/fea
 import westCozyCabinsThumbnailImg from '../Assets/asset-westcozy-cabins/featured-westcozy-cabins.webp';
 import westCozyCabinsBannerImg from '../Assets/asset-westcozy-cabins/banner-westcozy-cabins.webp';
 
-// DT Global
-import dtGlobalThumbnailImg from '../Assets/asset-dt-global/featured-dt-global.webp';
-
 // Hi Low
 import hiLowThumbnailImg from '../Assets/asset-hi-low-game/featured-hi-low-game.webp';
 
@@ -159,39 +156,6 @@ export const projectData = [
         reflection: "This particular project was a great learning experience as it allowed us to experience the dynamics of working in a team towards a larger goal. Being able to experience designing and developing a website from beginning to end provided an awesome environment to learn what it would be like working within a company in the future.",
         prevLink: '/cinephile',
         nextLink: '/portfolio'
-    },
-    {
-        slug: 'dt-global',
-        title: 'DT Global',
-        featured: false,
-        excerpt:
-            'A custom WordPress website for a profit-for-purpose organization.',
-        technologies: [
-            'HTML5',
-            'CSS3',
-            'JavaScript',
-            'jQuery',
-            'WordPress',
-            'ACF'
-        ],
-        roles: [
-            "Development",
-            "Architecture",
-        ],
-        category: [
-            'All',
-        ],
-        thumbnailImg: dtGlobalThumbnailImg,
-        bannerImg: '',
-        liveUrl: 'https://dt-global.com/',
-        githubUrl: '',
-        moreInfo: false,
-        overview: "",
-        design: "",
-        development: "",
-        reflection: "",
-        prevLink: '',
-        nextLink: ''
     },
     {
         slug: 'hi-low-game',
